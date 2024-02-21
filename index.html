@@ -3,13 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Restaurant calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="result">
-      <a href="index.html">Reset</a>
+    <section>
+      <form id="dinnerForm">
+        <input
+          type="number"
+          id="spending"
+          name="spending"
+          placeholder="How much will it be for meals together?"
+          required
+        />
+
+        <input
+          type="number"
+          id="tip"
+          name="tip"
+          placeholder="What percentage will they tip?"
+          required
+        />
+
+        <input
+          type="number"
+          id="people"
+          name="people"
+          placeholder="How many people will pay?"
+          required
+        />
+
+        <input class="calculate" type="submit" value="Calculate" />
+      </form>
+      <div class="result">
+        <div class="reset">
+          <a href="index.html">Reset</a>
+        </div>
+      </div>
     </section>
+    <!-- <section class="result">
+      <a href="index.html">Reset</a>
+    </section> -->
 
     <script src="script.js"></script>
   </body>

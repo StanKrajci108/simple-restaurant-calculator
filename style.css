@@ -21,35 +21,65 @@ body {
   }
 }
 
+#dinnerForm,
 .result {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 550px;
-  margin: 250px auto;
-  padding: 70px;
-  font-size: 25px;
+  text-align: center;
+  margin: 150px auto;
+  padding: 50px;
   background-color: #2b5b41;
   border: solid 1px #fff;
   border-radius: 15px;
-  box-shadow: 0 0 15px #fff;
-  animation: appearFromCenter 2s forwards;
+  box-shadow: 0 0 15px rgb(156, 239, 177);
 }
 
-a {
+.result {
+  display: none;
+  animation: appearFromCenter 2s forwards;
+  font-size: 1.5rem;
+}
+
+#dinnerForm input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  text-align: center;
+  padding: 15px 30px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #2b5b41;
+  border: none;
+  border-radius: 15px;
+  box-shadow: inset 2px 5px 10px #1b3a29;
+  color: #fff;
+}
+
+.reset a,
+#dinnerForm input[type="submit"] {
+  transition: transform 0.8s ease-in-out;
+  display: block;
   text-decoration: none;
   color: #fff;
+  width: 30%;
+  cursor: pointer;
   text-align: center;
-  font-size: 28px;
-  border: solid 1px #fff;
-  padding: 7px 20px 10px 20px;
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 15px;
   border-radius: 15px;
-  margin-top: 50px;
-  box-shadow: 0 0 10px #fff;
+  margin: 40px auto;
+  box-shadow: 6px 6px 7px -1px rgba(0, 0, 0, 0.15),
+    -4px -4px 7px -1px rgb(61, 118, 75);
 }
 
-a:hover {
-  background-color: #fff;
-  color: #3c8d61;
-  transition: 0.8s;
+.reset a:hover,
+#dinnerForm input[type="submit"]:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgb(61, 118, 75),
+    -0.5px -0.5px 0px rgb(61, 118, 75), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
