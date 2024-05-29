@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .reset a,
+  #dinnerForm input[type="submit"] {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  #dinnerForm,
+  .result {
+    margin: 40px auto;
+  }
+
+  .result {
+    font-size: 1rem;
+  }
+}

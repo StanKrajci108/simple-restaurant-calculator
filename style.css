@@ -38,7 +38,7 @@ h1 {
   align-items: center;
   max-width: 550px;
   text-align: center;
-  margin: 50px auto;
+  margin: 70px auto;
   padding: 25px 50px;
   background-color: #2b5b41;
   border: solid 1px #fff;
@@ -82,7 +82,7 @@ h1 {
   border-radius: 15px;
   margin: 40px auto;
   box-shadow: 6px 6px 7px -1px rgba(0, 0, 0, 0.15),
-    -4px -4px 7px -1px rgb(61, 118, 75);
+    -4px -4px 7px -1px rgb(72, 113, 82);
 }
 
 .reset a:active,
